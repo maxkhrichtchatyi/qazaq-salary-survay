@@ -1,0 +1,22 @@
+version: '3'
+services:
+  database:
+    image: 'mongo'
+    container_name: 'qss-mongo-database'
+    environment:
+      - MONGO_INITDB_DATABASE=qss-api
+      - MONGO_INITDB_ROOT_USERNAME=mongouser
+      - MONGO_INITDB_ROOT_PASSWORD=mongopassword
+    volumes:
+      - mongo:/data/db
+    networks:
+      - default
+    ports:
+      - '27017-27019:27017-27019'
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  mongo:
