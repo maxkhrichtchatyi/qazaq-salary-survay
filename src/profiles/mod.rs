@@ -18,10 +18,10 @@ pub struct InsertableProfile {
 }
 
 impl InsertableProfile {
-    fn from_cat(cats: Cat) -> InsertableCat {
-        InsertableCat {
-            name: cats.name,
-            age: cats.age,
+    fn from_profile(profiles: Profile) -> InsertableProfile {
+        InsertableProfile {
+            name: profiles.name,
+            age: profiles.age,
         }
     }
 }

@@ -33,7 +33,7 @@ pub fn rocket() -> Rocket {
         .mount(
             "/cats",
             routes![
-                cats::handler::all,
+                profiles::handler::all,
                 // cats::handler::get,
                 // cats::handler::post,
                 // cats::handler::put,
