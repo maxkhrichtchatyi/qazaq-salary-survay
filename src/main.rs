@@ -1,3 +1,3 @@
-use rustlang_rocket_mongodb::rocket;
+use qazaq_salary_survey::rocket;
 
 fn main() { rocket().launch(); }
